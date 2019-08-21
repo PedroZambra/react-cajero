@@ -85,7 +85,7 @@ class Atm extends React.Component{
                 this.setState({deposit_money: addmoney + val.target.value});
             }
         } 
-        console.log(this.state.deposit_money);
+        // console.log(this.state.deposit_money);
     }
 
     handleDelete(){
@@ -94,7 +94,7 @@ class Atm extends React.Component{
     }
 
     handleOk(event) {
-        console.log(event);
+        // console.log(event);
 
         if(event == 'deposit') {
             if(this.state.deposit_money!='' && (this.state.deposit_money < this.state.money_pj)) {
@@ -117,7 +117,7 @@ class Atm extends React.Component{
                 });
             }
         }
-        console.log(this.state.money_pj);
+        // console.log(this.state.money_pj);
     }   
 
     render(){
