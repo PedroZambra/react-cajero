@@ -11,7 +11,7 @@ class Atm extends React.Component{
             total_money: 50000, //Dinero en banco
             deposit_money: 0,
             last_transaction: 0,
-            money_pj: 100000, //Dinero del personaje
+            money_pj: 1000000000000, //Dinero del personaje
 
             isToggleOn: false,
             isToggleOn2: false,
