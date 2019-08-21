@@ -1,33 +1,485 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+    color: #FFF;
+    background-color: #DA9768;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.screen {
+    width: 70%;
+    height: 70vh;
+    padding: 15px 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.screenUp {
+    position: absolute;
+    z-index: -10;
+    width: 70%;
+    min-height: 70vh;
+    background-color: #0F1020;
+    border: 3px solid #FFF;
+    padding: 15px 25px;
+}
+
+.screenUpAnimation {
+    animation: fadeinScreen 2s ease-out 1;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.titleAnimation {
+    font-size: 3.5vw;
+    animation: fadeinTitle 2s ease-out 1;
+}
+
+.closeAnimation {
+    font-size: 3.5vw;
+    animation: fadeinClose 2s ease-out 1;
+}
+
+hr{
+    background-color: #FFF;  
+}
+
+.hrAnimation {
+    animation: fadeinHr 2s ease-out 1;
+}
+
+/*SECTION */
+
+section {
+    display: flex;
+    flex-direction: row;
+
+    margin: 4.5% 2%;
+}
+
+.credit_card {
+    max-width: 28vw;
+    max-height: 32vh;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.credit_cardAnimation {
+    animation: fadeinCreditCard 2s ease-out 1;
+}
+
+.money {
+    margin-left: 15%;    
+}
+
+.money1 {
+    animation: fadeinMoney1 2s ease-out 1;
+}
+
+.money2 {
+    animation: fadeinMoney2 2s ease-out 1;
+}
+
+.money3 {
+    animation: fadeinMoney3 2s ease-out 1;
+}
+
+.money4 {
+    animation: fadeinMoney4 2s ease-out 1;
+}
+
+
+.money_size {
+    /* font-size: 8vw; */
+    line-height:85%;
+    margin-left: -2%;
+    margin-bottom: 10%;
+}
+
+.last_transaction {
+    font-size: 3vw;
+}
+
+/*FOOTER*/
+
+footer {
+    width: 66vw;
+    margin: 0 2%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: relative;
+}
+
+.footerAnimation {
+    animation: fadeinFotter 2s ease-out 1;
+}
+
+.menu_button1, .menu_button2, .menu_button3, .menu_button4 {
+    position: absolute;
+    width: 18vw;
+    padding: 1.5vw 1.5vh;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 1.5vw;
+    text-decoration: none;
+
+    border: 2px solid #FFF;
+    border-radius: 10px;
+    outline: none;
+}
+
+.menu_button1 {
+    top:0;
+    left: 0;
+}
+
+.menu_button2 {
+    top:0;
+    left: 20vw;
+}
+
+.menu_button3 {
+    top:0;
+    left: 40vw;
+}
+
+.menu_button4 {
+    width: 7vw !important;
+
+    top:0;
+    left: 60vw;
+}
+
+.menu_button1:hover, .menu_button2:hover, .menu_button3:hover, .menu_button4:hover {
+    box-shadow: inset 0 0 3px #FFF;
+}
+
+
+/*OPEN ANIMATIONS*/
+
+@keyframes fadeinScreen {
+    0%{margin-top:-50%; opacity: 0.1}
+    100%{ margin-top:0 ; opacity: 1}
+}
+
+@keyframes fadeinTitle {
+    0%{margin:0 30% 0 -30%; opacity: 0}
+    100%{margin:0; opacity: 1}
+}
+
+@keyframes fadeinClose {
+    0%{margin:0 -30% 0 30%; opacity: 0}
+    100%{margin:0; opacity: 1}
+}
+
+@keyframes fadeinHr {
+    0%{margin:0 -100% 0 100%; width:0%; opacity: 0}
+    100%{width:100%; opacity: 1}
+}
+
+@keyframes fadeinMoney1 {
+    0%{margin-top:-12%; opacity: 0}
+    100%{margin-top:0; opacity: 1}
+}
+
+@keyframes fadeinMoney2 {
+    0%{margin-top:-6%; opacity: 0}
+    100%{margin-top:0; opacity: 1}
+}
+
+@keyframes fadeinMoney3 {
+    0%{margin-top:-10%; opacity: 0}
+    100%{margin-top:0; opacity: 1}
+}
+
+@keyframes fadeinMoney4 {
+    0%{margin-top:-4%; opacity: 0}
+    100%{margin-top:0; opacity: 1}
+}
+
+@keyframes fadeinCreditCard {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+@keyframes fadeinFotter{
+    0%{margin:0 -100% 0 100%; opacity: 0}
+    100%{ margin:0 2%; opacity: 1}
+}
+
+/*TOGGLE*********************************************/    
+
+.button_up_deposit {
+    z-index: 1; 
+    animation: fadeButtonUp 2s ease-out forwards;
+}
+
+@keyframes fadeButtonUp{
+    0%{}
+    50%{margin-top:-32%; width:18vw; background-color: #0F1020}
+    100%{margin-top:-32%; width:100%; background-color: #0F1020}
+}
+
+.button_up_take {
+    animation: fadeButtonUpTake 2s ease-out forwards;
+}
+
+@keyframes fadeButtonUpTake{
+    0%{}
+    50%{margin-top:-32%; left:20vw; width:18vw; background-color: #0F1020}
+    100%{margin-top:-32%; left:0; width:100%; background-color: #0F1020}
+}
+
+.button_up_transfer {
+    animation: fadeButtonUpTransfer 2s ease-out forwards;
+}
+
+@keyframes fadeButtonUpTransfer{
+    0%{}
+    50%{margin-top:-32%; left:40vw; width:18vw; background-color: #0F1020}
+    100%{margin-top:-32%; left:0; width:100%; background-color: #0F1020}
+}
+
+.button_up_more {
+    animation: fadeButtonUpMore 2s ease-out forwards;
+}
+
+@keyframes fadeButtonUpMore{
+    0%{}
+    50%{margin-top:-32%; left:60vw; width:7vw; background-color: #0F1020}
+    100%{margin-top:-32%; left:0; width:100%; background-color: #0F1020}
+}
+
+.loaded {
+    position: relative;
+    z-index: -5;
+
+    animation: fadeLoaded 2s ease-out forwards;
+}
+
+@keyframes fadeLoaded{
+    0%{opacity: 1}
+    100%{opacity: 0.1}
+}
+
+.menu_button_out {
+   
+    animation: fadeLoadedButtons 1s ease-out forwards;
+}
+
+@keyframes fadeLoadedButtons{
+    0%{opacity: 1}
+    90%{margin-top:-32%; opacity: 0.5}
+    100%{margin-top:-32%; opacity: 0;}
+}
+
+/*CALCULATOR SECTION*****/
+
+.calc {
+    display: none;
+}
+
+.calcShow {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top:37%;
+    margin: 0 2%;
+    width: 65%;
+    min-height: 10vh;
+}
+
+/*NUMBERS*/
+
+.numbers {
+    margin-top: 2%;
+    width: 40%;
+}
+
+.numbersAnimation {
+    animation: calcShowAnimation 4s ease-out forwards;
+}
+
+@keyframes calcShowAnimation{
+    0%{margin-top:-15%; opacity:0}
+    50%{margin-top:-15%; opacity:0}
+    100%{margin-top:0; opacity:1}
+}
+
+.number {
+	width:25%;
+    min-height: 7vh;
+    margin: 0.5vw;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+	background-color: white;
+    font-size: 2vw;
+    font-weight: bold;
+
+    box-shadow: 2px 2px 3px #000;
+}
+
+.number:active {
+    box-shadow: inset 0 0 4px #000;
+}
+
+/*QUANTITY*/
+
+.showQuantity {
+    position: relative;
+    width: 60%;
+    min-height:38vh;
+}
+
+.topp {
+    margin-top: 5%;
+    animation: fadeinCantidad 4s ease-out forwards;
+}
+
+@keyframes fadeinCantidad {
+    0%{margin:5% -100% 0 100%; opacity:0}
+    50%{margin:5% -100% 0 100%; opacity:0}
+    100%{margin-top:5%; opacity:1}
+}
+
+.quantity {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: right;
+}
+
+.quantity_size {
+    animation: fadeinQuantity 4s ease-out forwards;
+}
+
+@keyframes fadeinQuantity {
+    0%{margin:0 -50% 0 50%; opacity:0}
+    50%{margin:0 -50% 0 50%; opacity:0}
+    100%{margin:0; opacity:1}
+}
+
+.quantity_hr {
+    width: 100%;
+    animation: fadeinQuantityHr 4s ease-out forwards;
+}
+
+@keyframes fadeinQuantityHr {
+    0%{margin:0 -100% 0 100%; width:0%; opacity: 0}
+    50%{margin:0 -100% 0 100%; width:0%; opacity: 0}
+    100%{margin:0; opacity:1}
+}
+
+/*BACK*/
+
+.back {
+    width: 100%;
+}
+
+.backIn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color:white;
+    font-size: 40px;
+    padding: 10px 0;
+    animation: fadeinBack 4s ease-out forwards;
+}
+
+@keyframes fadeinBack{
+    0%{margin:0 -100% 0 100%; opacity:0}
+    50%{margin:0 -100% 0 100%; opacity:0}
+    100%{margin:0; opacity:1}
+}
+
+/*************************/
+
+.recoil {
+    animation: recoil 2s ease-in forwards;
+}
+
+@keyframes recoil{
+    0%{margin-top:-30%; left:0; width: 100%}
+    100%{top:0; width: 18vw;}
+}
+
+.recoil_more {
+    animation: recoilMore 2s ease-in forwards;
+}
+
+@keyframes recoilMore{
+    0%{margin-top:-30%; left:0; width: 100%}
+    100%{top:0; width: 7vw;}
+}
+
+.recoil2 {
+    animation: recoil2 2s ease-in forwards;
+}
+
+@keyframes recoil2{
+    0%{margin-top:-32%; opacity: 0;}
+    10%{margin-top:-32%; opacity:0.1}
+    100%{opacity:1}
+}
+
+.temporal {
+    position: absolute;
+    width: 70vw;
+    top:50%;
+    text-align: center;
+    color: #E8D03B;
+}
+
+.prox {
+    animation: fadeinBack 4s ease-out forwards;
+}
+ 
+/* MONEY */
+
+.size {
+    font-size: 8vw;
+}
+
+.size2 {
+    font-size: 7vw;
+}
+
+.size3 {
+    font-size: 6vw;
+}
+
+.size4 {
+    font-size: 5vw;
+}
+
+.size5 {
+    font-size: 4.5vw;
+}
+
+.size6 {
+    font-size: 3.5vw;
 }
