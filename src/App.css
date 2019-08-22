@@ -75,7 +75,7 @@ section {
 
 .credit_card {
     width: 28vw;
-    height: 32vh;
+    max-height: 32vh;
     border: 2px solid #FFF;
     border-radius: 5px;
     padding: 4px;
@@ -286,8 +286,8 @@ footer {
 
 @keyframes fadeLoadedButtons{
     0%{opacity: 1}
-    90%{margin-top:-32%; opacity: 0.5}
-    100%{margin-top:-32%; opacity: 0;}
+    90%{margin-top:-33%; opacity: 0.5}
+    100%{margin-top:-33%; opacity: 0;}
 }
 
 /*CALCULATOR SECTION*****/
@@ -300,7 +300,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    top:37%;
+    /* top:37%; */
+    top:37vh;
     margin: 0 2%;
     width: 65%;
     min-height: 10vh;
@@ -348,7 +349,7 @@ footer {
 .showQuantity {
     position: relative;
     width: 60%;
-    min-height:38vh;
+    min-height:39vh;
 }
 
 .topp {
@@ -419,7 +420,7 @@ footer {
 }
 
 @keyframes recoil{
-    0%{margin-top:-30%; left:0; width: 100%}
+    0%{margin-top:-33%; left:0; width: 100%}
     100%{top:0; width: 18vw;}
 }
 
@@ -428,7 +429,7 @@ footer {
 }
 
 @keyframes recoilMore{
-    0%{margin-top:-30%; left:0; width: 100%}
+    0%{margin-top:-33%; left:0; width: 100%}
     100%{top:0; width: 7vw;}
 }
 
@@ -437,8 +438,8 @@ footer {
 }
 
 @keyframes recoil2{
-    0%{margin-top:-32%; opacity: 0;}
-    10%{margin-top:-32%; opacity:0.1}
+    0%{margin-top:-33%; opacity: 0;}
+    10%{margin-top:-33%; opacity:0.1}
     100%{opacity:1}
 }
 
@@ -518,6 +519,28 @@ footer {
         50%{margin-top:-39%; left:60vw; width:7vw; background-color: #0F1020}
         100%{margin-top:-39%; left:0; width:100%; background-color: #0F1020}
     }
+
+    @keyframes fadeLoadedButtons{
+        0%{opacity: 1}
+        90%{margin-top:-39%; opacity: 0.5}
+        100%{margin-top:-39%; opacity: 0;}
+    }
+
+    @keyframes recoil{
+        0%{margin-top:-39%; left:0; width: 100%}
+        100%{top:0; width: 18vw;}
+    }
+
+    @keyframes recoilMore{
+        0%{margin-top:-39%; left:0; width: 100%}
+        100%{top:0; width: 7vw;}
+    }
+
+    @keyframes recoil2{
+        0%{margin-top:-39%; opacity: 0;}
+        10%{margin-top:-39%; opacity:0.1}
+        100%{opacity:1}
+    }
 }
 
 @media (max-width: 850px) and (min-width: 576px) {
@@ -544,6 +567,28 @@ footer {
         50%{margin-top:-37%; left:60vw; width:7vw; background-color: #0F1020}
         100%{margin-top:-37%; left:0; width:100%; background-color: #0F1020}
     }
+
+    @keyframes fadeLoadedButtons{
+        0%{opacity: 1}
+        90%{margin-top:-37%; opacity: 0.5}
+        100%{margin-top:-37%; opacity: 0;}
+    }
+
+    @keyframes recoil{
+        0%{margin-top:-37%; left:0; width: 100%}
+        100%{top:0; width: 18vw;}
+    }
+
+    @keyframes recoilMore{
+        0%{margin-top:-37%; left:0; width: 100%}
+        100%{top:0; width: 7vw;}
+    }
+
+    @keyframes recoil2{
+        0%{margin-top:-37%; opacity: 0;}
+        10%{margin-top:-37%; opacity:0.1}
+        100%{opacity:1}
+    }
 }
 
 @media (max-width:1024px) and (min-width: 851px) {
@@ -569,5 +614,27 @@ footer {
         0%{}
         50%{margin-top:-35%; left:60vw; width:7vw; background-color: #0F1020}
         100%{margin-top:-35%; left:0; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeLoadedButtons{
+        0%{opacity: 1}
+        90%{margin-top:-35%; opacity: 0.5}
+        100%{margin-top:-35%; opacity: 0;}
+    }
+
+    @keyframes recoil{
+        0%{margin-top:-35%; left:0; width: 100%}
+        100%{top:0; width: 18vw;}
+    }
+
+    @keyframes recoilMore{
+        0%{margin-top:-35%; left:0; width: 100%}
+        100%{top:0; width: 7vw;}
+    }
+
+    @keyframes recoil2{
+        0%{margin-top:-35%; opacity: 0;}
+        10%{margin-top:-35%; opacity:0.1}
+        100%{opacity:1}
     }
 }

@@ -32,7 +32,7 @@ class Section extends React.Component{
                     <div className="money">
                         <p className="text_size">Saldo actual</p>
                         <p className={`money_size ${classSize}`}>{this.props.total_money}€</p>
-                        <p className="text_size">Última transación</p>
+                        <p className="text_size">Última transacción</p>
                         <p className="last_transaction">{this.props.last_transaction}€</p>
                     </div>
                 </section>
@@ -44,7 +44,7 @@ class Section extends React.Component{
                     <div className="money">
                         <p className={this.props.openAnimation ? "text_size money1" : "text_size credit_cardAnimation"}>Saldo actual</p>
                         <p className={`money_size ${this.props.openAnimation ? "money2" : "credit_cardAnimation"} ${classSize}`}>{this.props.total_money}€</p>
-                        <p className={this.props.openAnimation ? "text_size money3" : "text_size credit_cardAnimation"}>Última transación</p>
+                        <p className={this.props.openAnimation ? "text_size money3" : "text_size credit_cardAnimation"}>Última transacción</p>
                         <p className={this.props.openAnimation ? "last_transaction money4" : "last_transaction credit_cardAnimation"}>{this.props.last_transaction}€</p>
                     </div>
                 </section>
