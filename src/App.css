@@ -74,8 +74,8 @@ section {
 }
 
 .credit_card {
-    max-width: 28vw;
-    max-height: 32vh;
+    width: 28vw;
+    height: 32vh;
     border: 2px solid #FFF;
     border-radius: 5px;
     padding: 4px;
@@ -104,7 +104,6 @@ section {
 .money4 {
     animation: fadeinMoney4 2s ease-out 1;
 }
-
 
 .money_size {
     /* font-size: 8vw; */
@@ -137,6 +136,7 @@ footer {
 
 .menu_button1, .menu_button2, .menu_button3, .menu_button4 {
     position: absolute;
+    top:0;
     width: 18vw;
     padding: 1.5vw 1.5vh;
     background-color: transparent;
@@ -150,24 +150,20 @@ footer {
 }
 
 .menu_button1 {
-    top:0;
     left: 0;
 }
 
 .menu_button2 {
-    top:0;
     left: 20vw;
 }
 
 .menu_button3 {
-    top:0;
     left: 40vw;
 }
 
 .menu_button4 {
     width: 7vw !important;
 
-    top:0;
     left: 60vw;
 }
 
@@ -237,8 +233,8 @@ footer {
 
 @keyframes fadeButtonUp{
     0%{}
-    50%{margin-top:-32%; width:18vw; background-color: #0F1020}
-    100%{margin-top:-32%; width:100%; background-color: #0F1020}
+    50%{margin-top:-33%; width:18vw; background-color: #0F1020}
+    100%{margin-top:-33%; width:100%; background-color: #0F1020}
 }
 
 .button_up_take {
@@ -247,8 +243,8 @@ footer {
 
 @keyframes fadeButtonUpTake{
     0%{}
-    50%{margin-top:-32%; left:20vw; width:18vw; background-color: #0F1020}
-    100%{margin-top:-32%; left:0; width:100%; background-color: #0F1020}
+    50%{margin-top:-33%; left:20vw; width:18vw; background-color: #0F1020}
+    100%{margin-top:-33%; left:0; width:100%; background-color: #0F1020}
 }
 
 .button_up_transfer {
@@ -257,8 +253,8 @@ footer {
 
 @keyframes fadeButtonUpTransfer{
     0%{}
-    50%{margin-top:-32%; left:40vw; width:18vw; background-color: #0F1020}
-    100%{margin-top:-32%; left:0; width:100%; background-color: #0F1020}
+    50%{margin-top:-33%; left:40vw; width:18vw; background-color: #0F1020}
+    100%{margin-top:-33%; left:0; width:100%; background-color: #0F1020}
 }
 
 .button_up_more {
@@ -267,8 +263,8 @@ footer {
 
 @keyframes fadeButtonUpMore{
     0%{}
-    50%{margin-top:-32%; left:60vw; width:7vw; background-color: #0F1020}
-    100%{margin-top:-32%; left:0; width:100%; background-color: #0F1020}
+    50%{margin-top:-33%; left:60vw; width:7vw; background-color: #0F1020}
+    100%{margin-top:-33%; left:0; width:100%; background-color: #0F1020}
 }
 
 .loaded {
@@ -405,8 +401,8 @@ footer {
     border: none;
     outline: none;
     color:white;
-    font-size: 40px;
-    padding: 10px 0;
+    font-size: 3.5vw;
+    padding: 1% 0;
     animation: fadeinBack 4s ease-out forwards;
 }
 
@@ -482,4 +478,96 @@ footer {
 
 .size6 {
     font-size: 3.5vw;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 320px) {
+    .text_size {
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 475px) and (min-width: 321px) {
+    .text_size {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 575px){
+    @keyframes fadeButtonUp{
+        0%{}
+        50%{margin-top:-39%; width:18vw; background-color: #0F1020}
+        100%{margin-top:-39%; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeButtonUpTake{
+        0%{}
+        50%{margin-top:-39%; left:20vw; width:18vw; background-color: #0F1020}
+        100%{margin-top:-39%; left:0; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeButtonUpTransfer{
+        0%{}
+        50%{margin-top:-39%; left:40vw; width:18vw; background-color: #0F1020}
+        100%{margin-top:-39%; left:0; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeButtonUpMore{
+        0%{}
+        50%{margin-top:-39%; left:60vw; width:7vw; background-color: #0F1020}
+        100%{margin-top:-39%; left:0; width:100%; background-color: #0F1020}
+    }
+}
+
+@media (max-width: 850px) and (min-width: 576px) {
+    @keyframes fadeButtonUp{
+        0%{}
+        50%{margin-top:-37%; width:18vw; background-color: #0F1020}
+        100%{margin-top:-37%; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeButtonUpTake{
+        0%{}
+        50%{margin-top:-37%; left:20vw; width:18vw; background-color: #0F1020}
+        100%{margin-top:-37%; left:0; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeButtonUpTransfer{
+        0%{}
+        50%{margin-top:-37%; left:40vw; width:18vw; background-color: #0F1020}
+        100%{margin-top:-37%; left:0; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeButtonUpMore{
+        0%{}
+        50%{margin-top:-37%; left:60vw; width:7vw; background-color: #0F1020}
+        100%{margin-top:-37%; left:0; width:100%; background-color: #0F1020}
+    }
+}
+
+@media (max-width:1024px) and (min-width: 851px) {
+    @keyframes fadeButtonUp{
+        0%{}
+        50%{margin-top:-35%; width:18vw; background-color: #0F1020}
+        100%{margin-top:-35%; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeButtonUpTake{
+        0%{}
+        50%{margin-top:-35%; left:20vw; width:18vw; background-color: #0F1020}
+        100%{margin-top:-35%; left:0; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeButtonUpTransfer{
+        0%{}
+        50%{margin-top:-35%; left:40vw; width:18vw; background-color: #0F1020}
+        100%{margin-top:-35%; left:0; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeButtonUpMore{
+        0%{}
+        50%{margin-top:-35%; left:60vw; width:7vw; background-color: #0F1020}
+        100%{margin-top:-35%; left:0; width:100%; background-color: #0F1020}
+    }
 }
