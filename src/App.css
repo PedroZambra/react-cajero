@@ -70,7 +70,7 @@ section {
     display: flex;
     flex-direction: row;
 
-    margin: 4.5% 2%;
+    margin: 6vh 2%;
 }
 
 .credit_card {
@@ -132,6 +132,18 @@ footer {
 
 .footerAnimation {
     animation: fadeinFotter 2s ease-out 1;
+}
+
+.footerAnimation2 {
+    animation: fadeinFotter2 2s ease-out 1;
+}
+
+.footerAnimation3 {
+    animation: fadeinFotter3 2s ease-out 1;
+}
+
+.footerAnimation4 {
+    animation: fadeinFotter4 2s ease-out 1;
 }
 
 .menu_button1, .menu_button2, .menu_button3, .menu_button4 {
@@ -220,8 +232,23 @@ footer {
 }
 
 @keyframes fadeinFotter{
-    0%{margin:0 -100% 0 100%; opacity: 0}
-    100%{ margin:0 2%; opacity: 1}
+    0%{margin:0 -120% 0 120%; opacity: 0}
+    100%{margin:0; opacity: 1}
+}
+
+@keyframes fadeinFotter2{
+    0%{margin:0 -130% 0 130%; opacity: 0}
+    100%{margin:0; opacity: 1}
+}
+
+@keyframes fadeinFotter3{
+    0%{margin:0 -140% 0 140%; opacity: 0}
+    100%{margin:0; opacity: 1}
+}
+
+@keyframes fadeinFotter4{
+    0%{margin:0 -150% 0 150%; opacity: 0}
+    100%{margin:0; opacity: 1}
 }
 
 /*TOGGLE*********************************************/    
@@ -233,8 +260,8 @@ footer {
 
 @keyframes fadeButtonUp{
     0%{}
-    50%{margin-top:-33%; width:18vw; background-color: #0F1020}
-    100%{margin-top:-33%; width:100%; background-color: #0F1020}
+    50%{margin-top:-32%; width:18vw; background-color: #0F1020}
+    100%{margin-top:-32%; width:100%; background-color: #0F1020}
 }
 
 .button_up_take {
@@ -243,8 +270,8 @@ footer {
 
 @keyframes fadeButtonUpTake{
     0%{}
-    50%{margin-top:-33%; left:20vw; width:18vw; background-color: #0F1020}
-    100%{margin-top:-33%; left:0; width:100%; background-color: #0F1020}
+    50%{margin-top:-32%; left:20vw; width:18vw; background-color: #0F1020}
+    100%{margin-top:-32%; left:0; width:100%; background-color: #0F1020}
 }
 
 .button_up_transfer {
@@ -253,8 +280,8 @@ footer {
 
 @keyframes fadeButtonUpTransfer{
     0%{}
-    50%{margin-top:-33%; left:40vw; width:18vw; background-color: #0F1020}
-    100%{margin-top:-33%; left:0; width:100%; background-color: #0F1020}
+    50%{margin-top:-32%; left:40vw; width:18vw; background-color: #0F1020}
+    100%{margin-top:-32%; left:0; width:100%; background-color: #0F1020}
 }
 
 .button_up_more {
@@ -263,8 +290,8 @@ footer {
 
 @keyframes fadeButtonUpMore{
     0%{}
-    50%{margin-top:-33%; left:60vw; width:7vw; background-color: #0F1020}
-    100%{margin-top:-33%; left:0; width:100%; background-color: #0F1020}
+    50%{margin-top:-32%; left:60vw; width:7vw; background-color: #0F1020}
+    100%{margin-top:-32%; left:0; width:100%; background-color: #0F1020}
 }
 
 .loaded {
@@ -286,8 +313,8 @@ footer {
 
 @keyframes fadeLoadedButtons{
     0%{opacity: 1}
-    90%{margin-top:-33%; opacity: 0.5}
-    100%{margin-top:-33%; opacity: 0;}
+    90%{margin-top:-32%; opacity: 0.5}
+    100%{margin-top:-32%; opacity: 0;}
 }
 
 /*CALCULATOR SECTION*****/
@@ -420,7 +447,7 @@ footer {
 }
 
 @keyframes recoil{
-    0%{margin-top:-33%; left:0; width: 100%}
+    0%{margin-top:-32%; left:0; width: 100%}
     100%{top:0; width: 18vw;}
 }
 
@@ -429,7 +456,7 @@ footer {
 }
 
 @keyframes recoilMore{
-    0%{margin-top:-33%; left:0; width: 100%}
+    0%{margin-top:-32%; left:0; width: 100%}
     100%{top:0; width: 7vw;}
 }
 
@@ -438,7 +465,7 @@ footer {
 }
 
 @keyframes recoil2{
-    0%{margin-top:-33%; opacity: 0;}
+    0%{margin-top:-32%; opacity: 0;}
     10%{margin-top:-33%; opacity:0.1}
     100%{opacity:1}
 }
@@ -483,13 +510,13 @@ footer {
 
 /*RESPONSIVE*/
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
     .text_size {
         font-size: 0.5em;
     }
 }
 
-@media (max-width: 475px) and (min-width: 321px) {
+@media (max-width: 500px) and (min-width: 321px) {
     .text_size {
         font-size: 0.7em;
     }
@@ -543,7 +570,7 @@ footer {
     }
 }
 
-@media (max-width: 850px) and (min-width: 576px) {
+@media (max-width: 801px) and (min-width: 576px) {
     @keyframes fadeButtonUp{
         0%{}
         50%{margin-top:-37%; width:18vw; background-color: #0F1020}
@@ -591,11 +618,59 @@ footer {
     }
 }
 
-@media (max-width:1024px) and (min-width: 851px) {
+@media (max-width:1024px) and (min-width: 800px) {
     @keyframes fadeButtonUp{
         0%{}
         50%{margin-top:-35%; width:18vw; background-color: #0F1020}
         100%{margin-top:-35%; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeButtonUpTake{
+        0%{}
+        50%{margin-top:-35%; left:20vw; width:18vw; background-color: #0F1020}
+        100%{margin-top:-35%; left:0; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeButtonUpTransfer{
+        0%{}
+        50%{margin-top:-35%; left:40vw; width:18vw; background-color: #0F1020}
+        100%{margin-top:-35%; left:0; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeButtonUpMore{
+        0%{}
+        50%{margin-top:-35%; left:60vw; width:7vw; background-color: #0F1020}
+        100%{margin-top:-35%; left:0; width:100%; background-color: #0F1020}
+    }
+
+    @keyframes fadeLoadedButtons{
+        0%{opacity: 1}
+        90%{margin-top:-35%; opacity: 0.5}
+        100%{margin-top:-35%; opacity: 0;}
+    }
+
+    @keyframes recoil{
+        0%{margin-top:-35%; left:0; width: 100%}
+        100%{top:0; width: 18vw;}
+    }
+
+    @keyframes recoilMore{
+        0%{margin-top:-35%; left:0; width: 100%}
+        100%{top:0; width: 7vw;}
+    }
+
+    @keyframes recoil2{
+        0%{margin-top:-35%; opacity: 0;}
+        10%{margin-top:-35%; opacity:0.1}
+        100%{opacity:1}
+    }
+}
+
+@media (max-width:1368px) and (min-width: 1024px) {
+    @keyframes fadeButtonUp{
+        0%{}
+        50%{margin-top:-34%; width:18vw; background-color: #0F1020}
+        100%{margin-top:-34%; width:100%; background-color: #0F1020}
     }
 
     @keyframes fadeButtonUpTake{

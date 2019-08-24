@@ -80,11 +80,11 @@ class Footer extends React.Component{
             )
         } else {
             return( //ABRIR CAJERO
-                <footer className={this.props.openAnimation ? "footerAnimation" : ''}>
-                    <button onClick={this.props.handleInsert} className="menu_button1" >Depositar dinero</button>
-                    <button onClick={this.props.handleTake} className="menu_button2">Retirar dinero</button>
-                    <button onClick={this.props.handleTransfer} className="menu_button3">Transferir dinero</button>
-                    <button onClick={this.props.handleMore} className="menu_button4">Más</button>
+                <footer>
+                    <button onClick={this.props.handleInsert} className={this.props.openAnimation ? "menu_button1 footerAnimation" : 'menu_button1'}>Depositar dinero</button>
+                    <button onClick={this.props.handleTake} className={this.props.openAnimation ? "menu_button2 footerAnimation2" : 'menu_button2'}>Retirar dinero</button>
+                    <button onClick={this.props.handleTransfer} className={this.props.openAnimation ? "menu_button3 footerAnimation3" : 'menu_button3'}>Transferir dinero</button>
+                    <button onClick={this.props.handleMore} className={this.props.openAnimation ? "menu_button4 footerAnimation4" : 'menu_button4'}>Más</button>
                 </footer>
             )
         }
