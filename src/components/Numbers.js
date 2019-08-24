@@ -22,9 +22,9 @@ class Section extends React.Component{
             classSize += ' size5';
         }
 
-        if(this.props.active || this.props.active2) {
+        if (this.props.active || this.props.active2) {
             return(
-                <div className={(this.props.active || this.props.active2) ? "calcShow" : "calc"}>
+                <div className="calcShow">
                     <div className="numbers">
                         <div className="numbersAnimation">
                             <button onClick={this.props.AddNumber} value="1" className="number">1</button>
@@ -44,8 +44,8 @@ class Section extends React.Component{
                         <div className="numbersAnimation">
                             <button onClick={this.props.handleDelete} value="delete" className="number">&lt;</button>
                             <button onClick={this.props.AddNumber} value="0" className="number">0</button>
-                            {this.props.active ? <button onClick={() => this.props.handleOk('deposit')} className="number">OK</button> : null}
-                            {this.props.active2 ? <button onClick={() => this.props.handleOk('take')} className="number">OK</button> : null}
+                            {this.props.active ? <button onClick={() => this.props.handleOk('deposit')} className="number ok">&nbsp;</button> : null}
+                            {this.props.active2 ? <button onClick={() => this.props.handleOk('take')} className="number ok">&nbsp;</button> : null}
                         </div>
                     </div>
                     <div className="showQuantity">

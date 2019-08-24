@@ -43,7 +43,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
 }
 
 .titleAnimation {
@@ -109,7 +109,7 @@ section {
     /* font-size: 8vw; */
     line-height:85%;
     margin-left: -2%;
-    margin-bottom: 10%;
+    margin-bottom: 6vh;
 }
 
 .last_transaction {
@@ -121,11 +121,6 @@ section {
 footer {
     width: 66vw;
     margin: 0 2%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
 
     position: relative;
 }
@@ -182,7 +177,6 @@ footer {
 .menu_button1:hover, .menu_button2:hover, .menu_button3:hover, .menu_button4:hover {
     box-shadow: inset 0 0 3px #FFF;
 }
-
 
 /*OPEN ANIMATIONS*/
 
@@ -254,7 +248,6 @@ footer {
 /*TOGGLE*********************************************/    
 
 .button_up_deposit {
-    z-index: 1; 
     animation: fadeButtonUp 2s ease-out forwards;
 }
 
@@ -307,7 +300,6 @@ footer {
 }
 
 .menu_button_out {
-   
     animation: fadeLoadedButtons 1s ease-out forwards;
 }
 
@@ -327,7 +319,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    /* top:37%; */
     top:37vh;
     margin: 0 2%;
     width: 65%;
@@ -337,7 +328,7 @@ footer {
 /*NUMBERS*/
 
 .numbers {
-    margin-top: 2%;
+    margin-top: 3vh;
     width: 40%;
 }
 
@@ -354,7 +345,7 @@ footer {
 .number {
 	width:25%;
     min-height: 7vh;
-    margin: 0.5vw;
+    margin: 0.8vh 0.5vw;
 
     border: none;
     border-radius: 5px;
@@ -369,6 +360,10 @@ footer {
 
 .number:active {
     box-shadow: inset 0 0 4px #000;
+}
+
+.ok {
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 66%, rgba(69,236,58,1) 67%, rgba(69,236,58,1) 100%);
 }
 
 /*QUANTITY*/
@@ -469,6 +464,8 @@ footer {
     10%{margin-top:-33%; opacity:0.1}
     100%{opacity:1}
 }
+
+/*TRANSFER AND MORE*/
 
 .temporal {
     position: absolute;
@@ -712,4 +709,15 @@ footer {
         10%{margin-top:-35%; opacity:0.1}
         100%{opacity:1}
     }
+}
+
+
+.numbersOut {
+    animation: prueba 2s ease-out 1;
+    position: relative;
+}
+
+@keyframes prueba {
+    0%{opacity: 1}
+    100%{opacity: 0}
 }
