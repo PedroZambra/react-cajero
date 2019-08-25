@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-cajero/static/css/main.4625ff40.chunk.css",
+    "main.css": "/react-cajero/static/css/main.926dfe2d.chunk.css",
     "main.js": "/react-cajero/static/js/main.6dc870ff.chunk.js",
     "main.js.map": "/react-cajero/static/js/main.6dc870ff.chunk.js.map",
     "runtime~main.js": "/react-cajero/static/js/runtime~main.354b3ea1.js",
@@ -8,9 +8,9 @@
     "static/js/2.8eebee82.chunk.js": "/react-cajero/static/js/2.8eebee82.chunk.js",
     "static/js/2.8eebee82.chunk.js.map": "/react-cajero/static/js/2.8eebee82.chunk.js.map",
     "index.html": "/react-cajero/index.html",
-    "precache-manifest.509f8f0eefa7adb22fee8f7af87bc9b2.js": "/react-cajero/precache-manifest.509f8f0eefa7adb22fee8f7af87bc9b2.js",
+    "precache-manifest.2acaa4c648801c26fb13effc42d87ae4.js": "/react-cajero/precache-manifest.2acaa4c648801c26fb13effc42d87ae4.js",
     "service-worker.js": "/react-cajero/service-worker.js",
-    "static/css/main.4625ff40.chunk.css.map": "/react-cajero/static/css/main.4625ff40.chunk.css.map",
+    "static/css/main.926dfe2d.chunk.css.map": "/react-cajero/static/css/main.926dfe2d.chunk.css.map",
     "static/media/credit_card.png": "/react-cajero/static/media/credit_card.56db4f98.png"
   }
 }
